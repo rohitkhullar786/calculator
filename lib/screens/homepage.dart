@@ -102,8 +102,10 @@ class _HomePageState extends State<HomePage> {
               flex: 2,
               child: Container(
                 child: GridView.builder(
+                  physics: NeverScrollableScrollPhysics(),
                   itemCount: buttons.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    
                       crossAxisCount: 4),
                   itemBuilder: (context, int index) {
                     //Clear Button
